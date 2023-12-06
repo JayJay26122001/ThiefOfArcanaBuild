@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TelaInicial.unity
+    guid: 0db7d71aca209bb42b2b15289f199627
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: fe07be18cc48c0f4bbc851cfc7eff2d5
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 63992f78a16303b49a236d210f96992e
+  - enabled: 1
+    path: Assets/Scenes/Derrota.unity
+    guid: 2fb3ba1918db2ed4b9aa18e12865e86c
+  m_configObjects: {}
