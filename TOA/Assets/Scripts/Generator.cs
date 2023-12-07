@@ -8,7 +8,7 @@ public class Generator : MonoBehaviour
     //P.S cada pedaço de terra QUE O PLAYER FOR PISAR NÃO AO REDOR, tem que ter 50 ou 100 de escala em Z para que isso funciona, se não tera buracos na geração
 
         public GameObject[] Section;
-        public int zPos = 50;
+        public float zPos = 50f;
         public bool creatingSection = false;
         public int secNum;
         public int maxSec = 10;
@@ -32,8 +32,8 @@ public class Generator : MonoBehaviour
         secNum = Random.Range(0, 6);
         GameObject newSection = Instantiate(Section[secNum], new Vector3(0, 0, zPos), Quaternion.identity);
         newSection.transform.parent = transform;
-        zPos += 50;
-        yield return new WaitForSeconds(10);
+        zPos += 50f;
+        yield return new WaitForSeconds(7);
         //creatingSection como falso novamente é o que faz resetar o processo
         creatingSection = false;
     }
