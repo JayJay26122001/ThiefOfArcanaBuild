@@ -29,11 +29,23 @@ public class SceneChanger : MonoBehaviour
         vidas -= dano;
         if(vidas <= 0)
         {
-            AudioController.controller.ChangeMusic("Derrota");
-            SceneManager.LoadScene("Derrota");
-            if(GameController.controller != null)
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial"))
             {
-                GameController.controller.ResetPoints();
+                AudioController.controller.ChangeMusic("Derrota");
+                SceneManager.LoadScene("DerrotaTutorial");
+                if (GameController.controller != null)
+                {
+                    GameController.controller.ResetPoints();
+                }
+            }
+            else
+            {
+                AudioController.controller.ChangeMusic("Derrota");
+                SceneManager.LoadScene("Derrota");
+                if (GameController.controller != null)
+                {
+                    GameController.controller.ResetPoints();
+                }
             }
         }
 

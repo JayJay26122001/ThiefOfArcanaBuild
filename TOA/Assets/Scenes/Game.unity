@@ -2628,9 +2628,9 @@ MonoBehaviour:
   Section:
   - {fileID: 3248892306567992532, guid: 18cd50f3cf422394db2582f2f32440e5, type: 3}
   - {fileID: 4321224984206692137, guid: cb3cacd8d8e6d4e49bb42abdf431a5e6, type: 3}
-  - {fileID: 8516815207729289854, guid: b4adf97cccb2dbd40936aa8f32f0eac8, type: 3}
-  - {fileID: 5258417637068567915, guid: 8e130b9e49b44724ab151b5b3c52515c, type: 3}
   - {fileID: 3910772575428341214, guid: 223d0aac372cbaa4887b0036c8baa5dc, type: 3}
+  - {fileID: 5258417637068567915, guid: 8e130b9e49b44724ab151b5b3c52515c, type: 3}
+  - {fileID: 8516815207729289854, guid: b4adf97cccb2dbd40936aa8f32f0eac8, type: 3}
   - {fileID: 7094168136725614097, guid: 9da346a2554457442937322242436602, type: 3}
   zPos: 63.75
   creatingSection: 0
@@ -2941,6 +2941,7 @@ GameObject:
   - component: {fileID: 953025280}
   - component: {fileID: 953025281}
   - component: {fileID: 953025283}
+  - component: {fileID: 953025285}
   m_Layer: 0
   m_Name: PlayerTest
   m_TagString: Player
@@ -3035,6 +3036,9 @@ MonoBehaviour:
   isInGround: 1
   jumpForce: 7
   shieldGameObject: {fileID: 20896861}
+  JumpClip: {fileID: 8300000, guid: b6b165311a547824b852f5d397780cf5, type: 3}
+  GetShield: {fileID: 8300000, guid: 63d0624aab360584087d18436cb54d78, type: 3}
+  LoseShield: {fileID: 8300000, guid: 3e36ef5a20da469488318264cc2264c6, type: 3}
 --- !u!96 &953025281
 TrailRenderer:
   serializedVersion: 2
@@ -3178,6 +3182,102 @@ CapsuleCollider:
   m_Height: 3.3699226
   m_Direction: 1
   m_Center: {x: 0, y: 0.5749512, z: 0}
+--- !u!82 &953025285
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953025275}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7194417065053221525, guid: 7c2ac35c701f5374c86742300fe5c081, type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5940,14 +6040,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8033683122114817440, guid: 8c2e4c2190631264aa48d803f426f931, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.029467955
+      objectReference: {fileID: 0}
+    - target: {fileID: -8033683122114817440, guid: 8c2e4c2190631264aa48d803f426f931, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.005546976
+      objectReference: {fileID: 0}
+    - target: {fileID: -5843832799486414385, guid: 8c2e4c2190631264aa48d803f426f931, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.02666036
+      objectReference: {fileID: 0}
+    - target: {fileID: -5843832799486414385, guid: 8c2e4c2190631264aa48d803f426f931, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.03985883
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8c2e4c2190631264aa48d803f426f931, type: 3}
       propertyPath: m_Name
       value: "Personagem I (Thief) N\xEDcolas RSG.fbx_Persona_I"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3071178826516149464, guid: 8c2e4c2190631264aa48d803f426f931, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.029467922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3071178826516149464, guid: 8c2e4c2190631264aa48d803f426f931, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.005546968
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 8c2e4c2190631264aa48d803f426f931, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: b19e46af4fe1969429c4577d61719e10, type: 2}
+    - target: {fileID: 7301716379944563745, guid: 8c2e4c2190631264aa48d803f426f931, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.026660362
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301716379944563745, guid: 8c2e4c2190631264aa48d803f426f931, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.03985884
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c2e4c2190631264aa48d803f426f931, type: 3}
 --- !u!4 &1927809410 stripped
@@ -6780,7 +6912,7 @@ GameObject:
   - component: {fileID: 8421981064046161024}
   m_Layer: 0
   m_Name: Dodge Obstacle (1)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6796,7 +6928,7 @@ GameObject:
   - component: {fileID: 8421981063369430087}
   m_Layer: 0
   m_Name: Dodge Obstacle (2)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6946,7 +7078,7 @@ GameObject:
   - component: {fileID: 2502956909287347063}
   m_Layer: 0
   m_Name: Jump Obstacle (2)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6962,7 +7094,7 @@ GameObject:
   - component: {fileID: 2502956908654665375}
   m_Layer: 0
   m_Name: Jump Obstacle (1)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6978,7 +7110,7 @@ GameObject:
   - component: {fileID: 2502956909402069458}
   m_Layer: 0
   m_Name: Jump Obstacle (3)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7174,7 +7306,7 @@ GameObject:
   - component: {fileID: 3275895518546737183}
   m_Layer: 0
   m_Name: Jump Obstacle
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8417,7 +8549,7 @@ GameObject:
   - component: {fileID: 66000485103907813}
   m_Layer: 0
   m_Name: Dodge Obstacle
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

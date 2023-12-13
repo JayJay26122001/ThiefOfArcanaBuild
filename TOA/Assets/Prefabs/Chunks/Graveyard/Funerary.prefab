@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 5985378512423854793}
   m_Layer: 0
   m_Name: Dodge Obstacle (4)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -926,7 +926,7 @@ GameObject:
   - component: {fileID: 6477816423949015666}
   m_Layer: 0
   m_Name: Dodge Obstacle (2)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1661,7 +1661,7 @@ GameObject:
   - component: {fileID: 8478414013101285026}
   m_Layer: 0
   m_Name: Dodge Obstacle (3)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1694,7 +1694,7 @@ GameObject:
   - component: {fileID: 361879033602399731}
   m_Layer: 0
   m_Name: Dodge Obstacle
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1727,7 +1727,7 @@ GameObject:
   - component: {fileID: 6116353237958843838}
   m_Layer: 0
   m_Name: Dodge Obstacle (1)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1811,6 +1811,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7173aa932f7a0b949867caf620b070a9, type: 3}
       propertyPath: m_Name
       value: Pillar
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7173aa932f7a0b949867caf620b070a9, type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7173aa932f7a0b949867caf620b070a9, type: 3}
@@ -2154,6 +2158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7173aa932f7a0b949867caf620b070a9, type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7173aa932f7a0b949867caf620b070a9, type: 3}
 --- !u!4 &2707549455915442619 stripped
@@ -2223,6 +2231,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f0afdcfa6f048204e8aa7dadfb0827b6, type: 3}
       propertyPath: m_Name
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f0afdcfa6f048204e8aa7dadfb0827b6, type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0afdcfa6f048204e8aa7dadfb0827b6, type: 3}
@@ -2911,6 +2923,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f0afdcfa6f048204e8aa7dadfb0827b6, type: 3}
       propertyPath: m_Name
       value: Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f0afdcfa6f048204e8aa7dadfb0827b6, type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0afdcfa6f048204e8aa7dadfb0827b6, type: 3}

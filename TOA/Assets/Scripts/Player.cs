@@ -17,10 +17,15 @@ public class Player : MonoBehaviour
     private float shieldDuration = 10f;
     private float currentShieldTime;
     public GameObject shieldGameObject;
+    private AudioSource source;
+    [SerializeField] private AudioClip JumpClip;
+    [SerializeField] private AudioClip GetShield;
+    [SerializeField] private AudioClip LoseShield;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        source = GetComponent <AudioSource>();
     }
 
     void Update()
@@ -102,6 +107,8 @@ public class Player : MonoBehaviour
         if (isInGround == true)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            source.clip = JumpClip;
+            source.Play();
             isInGround = false;
         }
     }
@@ -120,6 +127,8 @@ public class Player : MonoBehaviour
                 Destroy(collider.gameObject);
                 if(isShieldActive)
                 {
+                    source.clip = LoseShield;
+                    source.Play();
                     DisableShield();
                 }
             }
@@ -135,6 +144,8 @@ public class Player : MonoBehaviour
         }
         else if (collider.CompareTag("Shield"))
         {
+            source.clip = GetShield;
+            source.Play();
             ActivateShield();
         }
     }
@@ -147,7 +158,7 @@ public class Player : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Goal"))
         {
-            SceneChanger.instancia.ChangeScene("TelaInicial");
+            SceneChanger.instancia.ChangeScene("VitoriaTutorial");
         }
     }
 

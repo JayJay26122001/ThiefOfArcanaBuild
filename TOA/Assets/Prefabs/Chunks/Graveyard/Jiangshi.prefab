@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 6434732882746002075}
   m_Layer: 0
   m_Name: Jump Obstacle (6)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 5196462072700718515}
   m_Layer: 0
   m_Name: Jump Obstacle (5)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -793,7 +793,7 @@ GameObject:
   - component: {fileID: 4529992965236389756}
   m_Layer: 0
   m_Name: Jump Obstacle (1)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -826,7 +826,7 @@ GameObject:
   - component: {fileID: 6698024988007958011}
   m_Layer: 0
   m_Name: Jump Obstacle
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1341,7 +1341,7 @@ GameObject:
   - component: {fileID: 8483684241303700975}
   m_Layer: 0
   m_Name: Jump Obstacle (2)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1487,7 +1487,7 @@ GameObject:
   - component: {fileID: 2389121140311430212}
   m_Layer: 0
   m_Name: Jump Obstacle (4)
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2539,6 +2539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TombChunk
       objectReference: {fileID: 0}
+    - target: {fileID: 5447364591187600492, guid: be03c57d91fded3419807097e4c1c582, type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     - target: {fileID: 8288565934688873715, guid: be03c57d91fded3419807097e4c1c582, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2808,6 +2812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f0afdcfa6f048204e8aa7dadfb0827b6, type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0afdcfa6f048204e8aa7dadfb0827b6, type: 3}
 --- !u!4 &8284864563938318244 stripped
@@ -2881,6 +2889,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f0afdcfa6f048204e8aa7dadfb0827b6, type: 3}
       propertyPath: m_Name
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f0afdcfa6f048204e8aa7dadfb0827b6, type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0afdcfa6f048204e8aa7dadfb0827b6, type: 3}
