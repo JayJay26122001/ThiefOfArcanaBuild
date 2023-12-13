@@ -16,8 +16,9 @@ public class Item : MonoBehaviour
     {
         if (item.CompareTag("Player"))
         {
-            Instantiate(shine, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            GameObject efeito = Instantiate(shine, transform.position, Quaternion.identity);
+            Destroy(efeito, 0.75f);
         }
     }
 }
