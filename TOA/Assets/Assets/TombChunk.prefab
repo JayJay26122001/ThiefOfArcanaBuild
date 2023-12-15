@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8288565934688873715}
   m_Layer: 0
   m_Name: TombChunk
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23,21 +23,20 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5447364591187600492}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071062, z: -0, w: 0.7071074}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -32.1, y: 2.29, z: -25.51}
   m_LocalScale: {x: 1.548, y: 1.548, z: 1.548}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2483312638383443984}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1001 &2737281280988690427
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 8288565934688873715}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4407a111081318a4389eb66e4faa8752, type: 3}
@@ -92,13 +91,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: tomb
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4407a111081318a4389eb66e4faa8752, type: 3}
+      propertyPath: m_TagString
+      value: Obstaculo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4407a111081318a4389eb66e4faa8752, type: 3}
 --- !u!4 &2483312638383443984 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4407a111081318a4389eb66e4faa8752, type: 3}
   m_PrefabInstance: {fileID: 2737281280988690427}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2971723758293027498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4407a111081318a4389eb66e4faa8752, type: 3}
+  m_PrefabInstance: {fileID: 2737281280988690427}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1043440296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2971723758293027498}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.292492, y: 1.0612115, z: 2.456921}
+  m_Center: {x: -0.000000059604645, y: 0.032486692, z: 0.00176441}

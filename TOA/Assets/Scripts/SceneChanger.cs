@@ -24,6 +24,11 @@ public class SceneChanger : MonoBehaviour
         GameController.controller.ResetTotalPoints();
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     public void PlayerDeathScene(int dano)
     {
         vidas -= dano;
