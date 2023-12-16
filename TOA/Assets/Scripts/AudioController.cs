@@ -45,6 +45,9 @@ public class AudioController : MonoBehaviour
             case "Tutorial":
                 gameMusic.clip = myMusic[3];
                 break;
+            case "VitoriaTutorial":
+                gameMusic.clip = myMusic[4];
+                break;
         }
         gameMusic.Play();
     }
