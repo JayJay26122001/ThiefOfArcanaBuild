@@ -699,6 +699,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1022211, y: 2.6634383, z: 1.2343638}
   m_Center: {x: -0.000000059604645, y: -0.6405974, z: 0}
+--- !u!54 &2253804074505628043
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964004546178767374}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1748284799103340371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -823,14 +839,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2676739400452977087, guid: e3b3d37b32cccd54d8c6e67e742f2552, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.333
-      objectReference: {fileID: 0}
-    - target: {fileID: 2676739400452977087, guid: e3b3d37b32cccd54d8c6e67e742f2552, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 2676739400452977087, guid: e3b3d37b32cccd54d8c6e67e742f2552, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3
       objectReference: {fileID: 0}
@@ -873,22 +881,6 @@ PrefabInstance:
     - target: {fileID: 7255252145897135663, guid: e3b3d37b32cccd54d8c6e67e742f2552, type: 3}
       propertyPath: m_Name
       value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 9119945820143944629, guid: e3b3d37b32cccd54d8c6e67e742f2552, type: 3}
-      propertyPath: m_Size.y
-      value: 3.746967
-      objectReference: {fileID: 0}
-    - target: {fileID: 9119945820143944629, guid: e3b3d37b32cccd54d8c6e67e742f2552, type: 3}
-      propertyPath: m_Size.z
-      value: 1.2906113
-      objectReference: {fileID: 0}
-    - target: {fileID: 9119945820143944629, guid: e3b3d37b32cccd54d8c6e67e742f2552, type: 3}
-      propertyPath: m_Center.y
-      value: 0.87348354
-      objectReference: {fileID: 0}
-    - target: {fileID: 9119945820143944629, guid: e3b3d37b32cccd54d8c6e67e742f2552, type: 3}
-      propertyPath: m_Center.z
-      value: 0.54912186
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3b3d37b32cccd54d8c6e67e742f2552, type: 3}
@@ -1033,6 +1025,14 @@ PrefabInstance:
     - target: {fileID: 6281011705345238762, guid: 56b07eb0c2e603a4db9f53a3c3c28285, type: 3}
       propertyPath: m_Center.y
       value: 1.48526
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180542673256803848, guid: 56b07eb0c2e603a4db9f53a3c3c28285, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180542673256803848, guid: 56b07eb0c2e603a4db9f53a3c3c28285, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56b07eb0c2e603a4db9f53a3c3c28285, type: 3}
