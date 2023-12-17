@@ -29,7 +29,7 @@ public class Generator : MonoBehaviour
         {
             Destroy(transform.GetChild(0).gameObject);
         }
-        secNum = Random.Range(0, 6);
+        secNum = Random.Range(0, 10);
         GameObject newSection = Instantiate(Section[secNum], new Vector3(0, 0, zPos), Quaternion.identity);
         newSection.transform.parent = transform;
         zPos += 50f;

@@ -41,7 +41,7 @@ PlayerSettings:
     height: 1
   m_SplashScreenLogos:
   - logo: {fileID: 21300000, guid: 8e38fc75aeff42843860edbedde2268f, type: 3}
-    duration: 3
+    duration: 5
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
@@ -156,7 +156,9 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.TOADevTeam.ThiefOfArcana
+    Standalone: com.TOA-Dev-Team.Thief-Of-Arcana
   buildNumber:
     Standalone: 0
     iPhone: 0
